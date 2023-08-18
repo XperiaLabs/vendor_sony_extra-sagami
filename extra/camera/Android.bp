@@ -92,7 +92,7 @@ android_app_import {
 	name: "CreativeEffect",
 	owner: "sony",
 	apk: "CreativeEffect/CreativeEffect.apk",
-	presigned: true,
+	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
@@ -104,7 +104,7 @@ android_app_import {
 	name: "CameraPanorama",
 	owner: "sony",
 	apk: "CameraPanorama/CameraPanorama.apk",
-	presigned: true,
+	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
