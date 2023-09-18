@@ -1,1 +1,4 @@
 type vendor_dolby_data_file, file_type, data_file_type;
+
+type adspd, fs_type, sysfs_type;
+type init_hw, fs_type, sysfs_type;

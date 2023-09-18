@@ -1,0 +1,2 @@
+allow hal_audio_server vendor_audio_prop:property_service { set };
+allow hal_audio_server vendor_audio_prop:file { read getattr map open };

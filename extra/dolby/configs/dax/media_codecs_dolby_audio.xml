@@ -32,7 +32,7 @@
         <!-- DOLBY_UDC END -->
         <!-- DOLBY_AC4 IS NOT SUPPORTED -->
         <!-- MediaCodec name="OMX.dolby.ac4.decoder" type="audio/ac4">
-            <Limit name="channel-count" max="2" />
+            <Limit name="channel-count" max="16" />
             <Limit name="sample-rate" ranges="48000" />
             <Limit name="bitrate" range="16000-2688000" />
         </MediaCodec -->

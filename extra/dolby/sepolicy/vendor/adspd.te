@@ -1,0 +1,2 @@
+allow adspd vendor_audio_prop:property_service { set };
+allow adspd vendor_audio_prop:file { read getattr map open };
