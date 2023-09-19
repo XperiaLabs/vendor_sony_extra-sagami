@@ -38,4 +38,4 @@ PRODUCT_COPY_FILES += \
 
 # Game Controllers
  PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/extra/keylayout/,$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/)
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/extra/keylayout/,$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/)
