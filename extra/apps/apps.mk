@@ -20,10 +20,12 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # Sony Apps
 PRODUCT_PACKAGES += \
+    MusicPro \
     SemcMusic \
     MovieCreator \
     SomcColorGamut \
     SomcDualshockManager \
     SomcMediaExtensionProvider \
     ExternalMonitor \
-    UsbExtOutAudio
+    UsbExtOutAudio \
+    VideoCreator
