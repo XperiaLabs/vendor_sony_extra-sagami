@@ -39,27 +39,3 @@ android_app_import {
 	privileged: true,
 	system_ext_specific: true,
 }
-
-dex_import {
-	name: "com.motorola.frameworks.core.addon",
-	owner: "sony",
-	jars: ["proprietary/system/framework/com.motorola.frameworks.core.addon.jar"],
-}
-
-dex_import {
-	name: "moto",
-	owner: "sony",
-	jars: ["proprietary/system/framework/moto.jar"],
-}
-
-dex_import {
-	name: "moto-checkin",
-	owner: "sony",
-	jars: ["proprietary/system/framework/moto-checkin.jar"],
-}
-
-dex_import {
-	name: "moto-settings",
-	owner: "sony",
-	jars: ["proprietary/system/framework/moto-settings.jar"],
-}

@@ -43,10 +43,6 @@ PRODUCT_COPY_FILES += \
 
 # Dolby Blob(s)
 PRODUCT_COPY_FILES += \
-    $(LOCAL_DOLBY)/proprietary/system/etc/permissions/com.motorola.frameworks.core.addon.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.motorola.frameworks.core.addon.xml \
-    $(LOCAL_DOLBY)/proprietary/system/etc/permissions/moto.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/moto.xml \
-    $(LOCAL_DOLBY)/proprietary/system/etc/permissions/moto-checkin.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/moto-checkin.xml \
-    $(LOCAL_DOLBY)/proprietary/system/etc/permissions/moto-settings.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/moto-settings.xml \
     $(LOCAL_DOLBY)/proprietary/vendor/bin/hw/vendor.dolby.hardware.dms@2.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.dolby.hardware.dms@2.0-service \
     $(LOCAL_DOLBY)/proprietary/vendor/etc/init/vendor.dolby.hardware.dms@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.dolby.hardware.dms@2.0-service.rc \
     $(LOCAL_DOLBY)/proprietary/vendor/lib/libdapparamstorage.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdapparamstorage.so \
@@ -73,24 +69,10 @@ PRODUCT_COPY_FILES += \
 # Dolby Vendor Prop(s)
 PRODUCT_VENDOR_PROPERTIES += \
     ro.vendor.dolby.dax.version=DAX3_3.8.5.20_r1 \
-    ro.vendor.audio.dolby.dax.version=DAX3_3.6 \
     vendor.audio.dolby.ds2.enabled=false \
-    vendor.audio.dolby.ds2.hardbypass=false \
-    ro.vendor.audio.dolby.dax.support=true \
-    ro.vendor.audio.dolby.surround.enable=true \
-    persist.vendor.audio_fx.current=dolby
-
-# Dolby ODM Prop(s)
-PRODUCT_ODM_PROPERTIES += ro.vendor.sony.effect.dolby_atmos=true
+    vendor.audio.dolby.ds2.hardbypass=false
 
 # Dolby Package(s)
 PRODUCT_PACKAGES += \
     daxService \
     DolbySound
-
-# Moto Package(s)
-PRODUCT_PACKAGES += \
-    com.motorola.frameworks.core.addon \
-    moto \
-    moto-checkin \
-    moto-settings
