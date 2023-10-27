@@ -19,7 +19,7 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/sony/extra-sagami
 
 # Dolby Sound
-    $(call inherit-product, vendor/sony/extra-sagami/extra/dolby/dolby.mk)
+#    $(call inherit-product, vendor/sony/extra-sagami/extra/dolby/dolby.mk)
 
 # ThreeSixtyRA Upmix Lite
     $(call inherit-product, vendor/sony/extra-sagami/extra/threesixtyra/upmix.mk)
