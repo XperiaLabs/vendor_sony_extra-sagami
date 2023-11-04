@@ -15,14 +15,14 @@
 #
 
 # Dolby Path
-LOCAL_DOLBY := vendor/sony/extra-sagami/extra/dolby
+LOCAL_DOLBY := vendor/sony/extra-sagami/extra/audio/dolby
 
 # Soong Namespace
 PRODUCT_SOONG_NAMESPACES += \
-    vendor/sony/extra-sagami/extra/dolby
+    vendor/sony/extra-sagami/extra/audio/dolby
 
 # SEPolicy
-BOARD_VENDOR_SEPOLICY_DIRS += vendor/sony/extra-sagami/extra/dolby/sepolicy/vendor
+BOARD_VENDOR_SEPOLICY_DIRS += vendor/sony/extra-sagami/extra/audio/dolby/sepolicy/vendor
 
 # HIDL
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += $(LOCAL_DOLBY)/configs/vintf/dms/dolby_framework_matrix.xml

@@ -18,8 +18,14 @@
 PRODUCT_SOONG_NAMESPACES += \
     vendor/sony/extra-sagami
 
-# Dolby Sound
-#    $(call inherit-product, vendor/sony/extra-sagami/extra/dolby/dolby.mk)
+# Flags
+TARGET_SUPPORTS_SOUND_ENHANCEMENT ?= true
+
+# Sound Enhancements
+ifeq ($(TARGET_SUPPORTS_SOUND_ENHANCEMENT),true)
+#    $(call inherit-product, vendor/sony/extra-sagami/extra/audio/dolby/dolby.mk)
+    $(call inherit-product, vendor/sony/extra-sagami/extra/audio/dirac/dirac.mk)
+endif
 
 # Sony Framework
 PRODUCT_COPY_FILES += \
